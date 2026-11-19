@@ -7,7 +7,7 @@
   <meta name="author" content="Sofia Salas">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-
+<script src="https://unpkg.com/lucide@latest" defer></script>
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -15,7 +15,7 @@
 
 </head>
 <!--AQUI INICIA EL DESARROLLO DEL CUERPO DE LA PÁGINA-->
-<body>
+<body.>
 <!--ENCABEZADO DE LA PÁGINA-->
 
 <header class="header-punto-mio">
@@ -43,10 +43,64 @@
       <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
 </header>
+<!-- INICIO DEL CONTENIDO PRINCIPAL DE LA PÁGINA-->
+<main>
+   <!-- HERO-->
+     <section id="inicio" class="container hero-section">
+      <div class="hero-content fade-in-up">
+        <p class="eyebrow">Aquí podrás encontrar variedad de productos hechos con mucho amor</p>
+        <h1 class="hero-title">Hecho con amor</h1>
+        <p class="hero-subtitle">
+         punto mio es una marca dedicada a la creación de productos artesanales tejidos a mano, donde cada pieza está elaborada con dedicación, creatividad y mucho cariño.
+        </p>
+        <a href="#menu" class="btn btn-coffee hero-cta">
+          Encuentra lo que tenemos para ti <i data-lucide="arrow-right" class="icon-sm"></i>
+        </a>
+      </div>
 
 
-<h1>Punto mío</h1>
-<p>Bienvenido a mi tienda de tejidos a crochet.</p>
+      <div class="hero-media">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <img
+          src="img/HERO.jpg"
+          alt="Imagen de ganchos"
+          width="1600"
+          height="1104"
+          class="hero-image"
+        />
+      </div>
+    </section>
+</main>
 
+<!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="logo logo-light" aria-label="Punto Mío, inicio">
+        
+        <span class="logo-text">punto<span class="logo-light-weight">mío</span></span>
+      </a>
+
+
+      <nav class="footer-nav" aria-label="Navegación pie de página">
+       <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#pedidos-personalizados">Pedidos personalizados</a>
+        <a href="#pedidos">Pedidos</a>
+      </nav>
+
+
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+      </div>
+    </div>
+
+
+    <p class="copyright">
+      © <span id="current-year"></span> punto mio. Todos los derechos reservados.
+    </p>
+  </footer>
+  
 </body>
 </html>
