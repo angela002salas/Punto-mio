@@ -43,7 +43,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255,253,248,.92);
+  background: var(--beige);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
 }
@@ -242,7 +242,26 @@ img {
   text-transform: uppercase;
   color: var(--olivo);
 }
-/* ---------- Sección de prodcutos ---------- */
+/* ---------- SECCIÓN NOSOTROS ---------- */
+.section-header-center {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.section-title {
+  margin-top: 0.5rem;
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  line-height: 1.15;
+}
+
+
+.muted-note {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
 .about-section {
   background-color: var(--arena);
   color: var(--primary-fg);
@@ -296,10 +315,13 @@ img {
 
 
 .product-card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border-radius: 1rem;
-  background-color: var(--rosa);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  background-color: var(--caramelo); /* Diferente al fondo --cream */
+  border: 1px solid var(--line);  /* Delimita cada tarjeta */
+  box-shadow: 0 4px 12px rgba(63, 48, 42, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -343,20 +365,20 @@ img {
 
 .product-header h3 {
   font-size: 1.25rem;
-  color: var(--azul-profundo);
+  color: var(--arena);
 }
 
 
 .product-price {
   font-weight: 600;
-  color: var(--azul-profundo);
+  color: var(--arena);
 }
 
 
 .product-desc {
   margin-top: 0.5rem;
   font-size: 0.875rem;
-  color: var(--azul-profundo);
+  color: var(--arena);
 }
 
  /* ---------- Pie de página ---------- */
