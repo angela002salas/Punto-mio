@@ -7,6 +7,7 @@
   <meta name="author" content="Sofia Salas">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
   <script src="https://unpkg.com/lucide@latest" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
 
@@ -32,13 +33,13 @@
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#catalogo">Catálogo</a></li>
           <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#pedidos-personalizados">Pedidos personalizados</a></li>
-          <li><a href="#pedidos">Pedidos</a></li>
-        </ul>
-        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Punto Mío.')">
-          <i data-lucide="message-square-heart"></i> Pedir ahora
-        </button>
-      </nav>
+          <li><a href="#contacto">Contacto</a></li>
+
+       <a class="btn primary"
+   href="https://wa.me/525531122503?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Punto%20M%C3%ADo."
+   target="_blank" rel="noopener">
+  <i data-lucide="message-square-heart"></i> Pedir ahora
+</a>
 
 
       <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
@@ -73,7 +74,7 @@
     </section>
 
     <!-- AQUI AGREGO LA MISIÓN-->
- <section id="nosotros" class="about-section">
+ <section id="sobre-mi" class="about-section">
       <div class="container about-grid">
         <img
           src="img/nosotros.jpg"
@@ -98,7 +99,7 @@
     </section>
 
     <!-- AQUI VAN LOS PROCUCTOS -->
-<section id="menu" class="container menu-section">
+<section id="catalogo" class="contasiner menu-section">
       <div class="section-header-center">
         <p class="eyebrow">Mis productos</p>
         <h2 class="section-title">Hechos con amor</h2>
@@ -229,11 +230,70 @@ Disponibles en diferentes colores y diseños para que puedas elegir la que más 
     </section>
 
 
+<!-- CONTACTO -->
+ <section id="contacto" class="container contact-section">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section-title">¡elige tu próximo regalo!</h2>
+        <p class="muted-note">puedes contactarnos en cualquier momento para más información o hacer tu pedido.</p>
+
+
+        <ul class="contact-list">
+          <li><a href="https://maps.app.goo.gl/qfQd3Bj18519RntY6" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="map-pin" class="contact-icon" ></i> Galerías Atizapán</li></a>
+          <li><i data-lucide="phone" class="contact-icon"></i> (55) 3112-2503</li>
+          <li><i data-lucide="mail" class="contact-icon"></i> angela.ssalasmi@gmail.com</li>
+          <li><i data-lucide="clock" class="contact-icon"></i> Lunes a Viernes, 10:00 AM - 6:00 PM</li>
+        </ul>
+
+
+        <a
+          href="https://wa.me/525531122503"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp-btn"
+        >
+          <i data-lucide="message-circle" class="icon-sm"></i> WhatsApp
+        </a>
+        <p class="footnote">+52 553112 2503</p>
+      </div>
+
+<!-- FORMULARIO, DUDAS, SUGERENCIAS, ETC... -->
+ <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" maxlength="100" />
+          <p id="error-name" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" maxlength="255" />
+          <p id="error-email" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" maxlength="1000"></textarea>
+          <p id="error-message" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <button type="submit" class="btn-formulario">Enviar mensaje</button>
+
+
+        <p id="form-status" class="form-status" role="status" hidden>
+          ¡Formulario enviado con éxito! ¡Nos pondremos en contacto contigo pronto!
+        </p>
+      </form>
+    </section>
 
 </main> <!-- FIN DEL CONTENIDO PRINCIPAL DE LA PÁGINA-->
 
 <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="site-footer" id="contacto">
     <div class="container footer-inner">
       <a href="#inicio" class="logo logo-light" aria-label="Punto Mío, inicio">
         
@@ -245,14 +305,15 @@ Disponibles en diferentes colores y diseños para que puedas elegir la que más 
        <a href="#inicio">Inicio</a>
         <a href="#catalogo">Catálogo</a>
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#pedidos-personalizados">Pedidos personalizados</a>
-        <a href="#pedidos">Pedidos</a>
+        <a href="#contacto">Contacto</a>
+
       </nav>
 
 
       <div class="social-links">
-        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        <a href="https://www.instagram.com/ang.salas_/" target="_blank" rel="noopener noreferrer"aria-label="Instagram"><i i class="fa-brands fa-instagram"></i></a>
+        <a href="www.linkedin.com/in/angela-sofia-salas-mijares-972842390" target="_blank" rel="noopener noreferrer"aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.tiktok.com/@ang.salas_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer"aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
       </div>
     </div>
 
@@ -263,8 +324,6 @@ Disponibles en diferentes colores y diseños para que puedas elegir la que más 
   </footer>
   
 <script src="js/script.js"></script>
-
-
 
 </body>
 </html>
